@@ -7,7 +7,8 @@ Benchmark your computer
 Clone this repo:
 
 ```
-# ...
+git clone https://github.com/stevekm/benchmark.git
+cd benchmark
 ```
 
 Setup data and software
