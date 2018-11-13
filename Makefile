@@ -5,6 +5,7 @@ DATA:=data.txt
 .PHONY: $(SEQ)
 
 $(DATA):
+	echo ">>> Creating test data" ; \
 	dd if=/dev/urandom of=$(DATA) bs=1024 count=1024000
 # 10240 = 10MB
 # 102400 = 100MB
@@ -33,6 +34,7 @@ conda:
 	rm -f "$(CONDASH)"
 
 conda-install: conda
+	@echo ">>> Installing pigz" ; \
 	conda install -y -c anaconda pigz=2.4
 
 setup: conda-install $(DATA)
