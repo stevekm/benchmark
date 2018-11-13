@@ -1,6 +1,6 @@
 # benchmark
 
-Benchmark your computer
+Benchmark your computer by running `pigz` parallel compression on multiple CPU threads, from 1 to the total number of CPU cores on your system.
 
 # Setup
 
